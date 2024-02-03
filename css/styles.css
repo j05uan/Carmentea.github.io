@@ -1,0 +1,305 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-style: none;
+    padding: 0px;
+    margin: 0px;
+    /* background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.m.wikipedia.org%2Fwiki%2FArchivo%3AArepas_con_chorizo.jpg&psig=AOvVaw04QIJm2_5cdRHxyq43ZExw&ust=1706935836252000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDr8JLui4QDFQAAAAAdAAAAABAE");
+    background-position: top;
+    background-repeat: no-repeat;  */
+    background-color: salmon;
+
+}
+header{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    color: transparent;
+    display: flex;
+}
+
+.logo{
+    width: 60%;
+    height: 15vh;
+    color: rgb(176, 143, 143);
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    /* flex-direction: row-reverse; */
+    /* font-size: 2.5em; */
+}
+.logo h2{
+    font-size: 2.5em;
+    margin-top: 8px;
+    margin-bottom: 0px;
+
+}
+footer{
+    width: 25%;
+    height: 80vh;
+    display: flex;
+    align-items: self-end;
+    justify-content: flex-end;
+    margin-right: 2vw;
+
+}
+#reservas   {
+    
+    background-color: grey;
+    width: 200px;
+    height: 50px;
+    border-color: grey;
+    color: white;
+    position: fixed;
+}
+p{
+    display: flex;
+    align-items: center;
+    margin-right: 45px;
+    font-size: 0.9em;
+}
+#Menus{
+    width: 40%;
+    height: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.navegaddor{
+    padding: 0px;
+    margin: 2px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    height: 12vh;
+}
+#contenedor{
+    display: flex;
+    align-items: center;
+}
+#home{
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/027/057/177/non_2x/slices-of-roast-beef-on-a-white-plate-on-a-black-background-generative-ai-free-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 1500px; */
+
+}
+
+#left-home{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    padding-right: 25vw;
+}
+#left-home p{
+    margin: 0;
+}
+#left-home h1{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+#rigth-home{
+    width: 50vw;
+    display: flex;
+    align-items: flex-end;
+}
+#about{
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-about{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* align-content: stretch; */
+    align-items: center;
+    padding-top: 45vh;
+    padding-left: 5vw;
+}
+.rigth-about{
+    display: flex;
+    width: 60vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.im-rigth-about{
+    display: flex;
+    width: 50vw;
+    height: 60vh;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.im-rigth-about img{
+    width: 30vw;
+    height: 55vh;
+}
+
+.rigth-about img{
+    display: flex;
+    width: 30vw;
+    height: 60vh;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+h1{
+    color: red;
+    font-size: 2em;
+    padding: 0;
+}
+p{
+    font-size: 1em;
+    padding-left: 5vh;
+}
+#sobrenosotros{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    background-image: url("../img/mazorquitas.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#historia{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+}
+.background-img-historia{
+    height: 100%;
+    width: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/mazorquitas.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}  
+
+
+.background-img-historia img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4vw;
+}
+#galleta{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: center;
+}
+#historia h1{
+    color: salmon;
+}
+#menu{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    background-image: url("../img/carne.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+button{
+    width: 20vw;
+    height: 15vh;
+    background-color: #CA6F1E;
+    border: black;
+    color: white;
+}
+#services{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cuadrados{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw; 
+    
+}
+.cuadrado{
+    background-color: white;
+    width: 270px;
+    height: 220px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px auto;
+    border: white;
+}
+#space{
+    width: 100vw;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+#Espacios{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#Pet-friendly{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-image: url("../img/platos.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#contact{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+div img {
+    width: 40vw;
+    height: 60vh;
+    margin-right: 3vw;
+}
+#Pet-friendly{
+    color: black;
+    display: flex;
+    align-items: center;
+}
