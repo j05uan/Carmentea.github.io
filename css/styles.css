@@ -158,7 +158,7 @@ p{
     justify-content: center;
 }
 h1{
-    color: red;
+    color: blueviolet;
     font-size: 2em;
     padding: 0;
 }
@@ -192,7 +192,7 @@ p{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../img/mazorquitas.jpeg");
+    background-image: url("../img/carne2.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }  
@@ -222,7 +222,7 @@ p{
     justify-content: center;
     align-items: center;
     background-color: gray;
-    background-image: url("../img/carne.jpg");
+    background-image: url("../img/platos.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -280,9 +280,10 @@ button{
     justify-content: center;
     display: flex;
     align-items: center;
-    background-image: url("../img/platos.jpeg");
+    background-color: gray;
+    /* background-image: url("../img/platos.jpeg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 
 }
 #contact{
@@ -294,8 +295,8 @@ button{
     background-color: black;
 }
 div img {
-    width: 40vw;
-    height: 60vh;
+    width: 35vw;
+    height: 55vh;
     margin-right: 3vw;
 }
 #Pet-friendly{
