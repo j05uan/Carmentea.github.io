@@ -9,6 +9,7 @@
 </head>
 <body>
     <header >
+        <section id="Head">
         <section class="logo">
         <h2>CARMENTEA</h2>
         <p>Leña, Carbon y Corazon</p>
@@ -21,10 +22,13 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <input type="checkbox" id="Cambio-de-menu">
+            <label for="Cambio-de-menu">***</label>
         <footer>
             <button id="reservas">Reservas</button>
         </footer>
         </section>
+    </section>
 
     </header>   
     
@@ -45,15 +49,17 @@
                         <p> Nos basamos en lo tipico de nuestra región, en esas recetas que nos recuerdan a casa y que nunca podremos dejar de amar.
                         </p>
                     </aside>
-                    <aside class="rigth-about"><img src="img\temporal.jpg" alt="Imagen temporal">
+                    <aside class="rigth-about"><img src="../Carmentea/img/paisaje.jpeg" alt="Imagen temporal">
                     </aside>
                 </div>
                 <div id="historia"><aside class="left-about">
                     <h1>Nuestro Chef</h1>
-                    <p> Oliva Ronderos, la realizadora de sueños, quien hizo que este gran proyecto iniciara con sus sonrisas, sus correcciones y su infinito amor <br>
-                         que nos logró transferir en cada una de sus recetas. 
+                    <p> Oliva Ronderos, la realizadora de sueños, quien hizo que este gran <br>
+                        proyecto iniciara con sus sonrisas, sus correcciones y su infinito <br>
+                        amor que nos logró transferir en cada una de sus recetas. <br> 
 
-                        Quien con sus manos preparó los platos que no paraban de deleitar nuestro paladar; deliciosos y sin dejar a un lado la sencillez y humildad.
+                        Quien con sus manos preparó los platos que no paraban de deleitar <br>
+                        nuestro paladar; deliciosos y sin dejar a un lado la sencillez y humildad.
                         
                     </p>
                 </aside>
@@ -64,8 +70,7 @@
             <section id="menu"> 
                 <aside class="left-about">
                     <h1>Conoce nuestro menu</h1>
-                    <p> En El siguiente espacio se dara una breve <br>
-                        introduccion o descripcion del tema a tratar.
+                    <p> Nuestro Menu
                     </p>
                     <button >Menu</button>
                 </aside>
@@ -75,17 +80,17 @@
             <section id="services">
                 <div id="galleta"><aside class="left-about">
                     <h1> Nuestros Servicios</h1>
-                    <p> Tenemos la mejor parrilla de la ciudad, todo preparado a base de carbón y leña lo que nos permite tener un sazón unico. 
+                    <p> Tenemos la mejor parrilla de la ciudad, todo preparado a <br>
+                         base de carbón y leña lo que nos permite tener un sazón unico. 
                     </p>
                 </div>
                 <div class="background-img-historia">
-                    <img src="img\temporal.jpg" alt="Imagen temporal">                
+                    <!-- <img src="img\temporal.jpg" alt="Imagen temporal">                 -->
             </div>
             </section>
             <section id="space"> 
                 <div id="Espacios">
-                    <div class="background-img-historia">
-                        <img src="img\temporal.jpg" alt="Imagen temporal">                
+                    <div class="background-img-historia">                
                 </div>
                 <div id="galleta"><aside class="left-about">
                     <h1> Nuestros Espacios</h1>
@@ -103,19 +108,30 @@
             </aside>
             </div>
             </section>
-            <section id="contact">Contact</section>
-            <div>
-                <aside id="left-contact">
-                    <div id="div1"></div>
-                    <div id="div2"></div>
-                    <div id="div3"></div>
-                </aside>
-                <aside id="rigth-contact">
-                    Nuestras redes
-                </aside>
-            </div>
+            <section id="contact">
+                <div>
+                    <aside id="left-contact">
+                        <div id="div1"></div>
+                        <div id="div2"></div>
+                        <div id="div3"></div>
+                    </aside>
+                    <aside id="rigth-contact">
+                        Nuestras redes
+                    </aside>
+                </div>
+            </section>
+               
         </section>
     </section>
+<script>
+    const rutaHead=document.getElementById("Head")
+    window.addEventListener("scroll", function(){
+        if (window.scrollY > 0){ 
+            rutaHead.classList.add('fondo-negro')
+        }
+        else{rutaHead.classList.remove('fondo-negro')}
 
+    })
+</script>
 </body>
 </html>

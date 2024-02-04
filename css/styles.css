@@ -7,7 +7,7 @@ body{
     /* background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.m.wikipedia.org%2Fwiki%2FArchivo%3AArepas_con_chorizo.jpg&psig=AOvVaw04QIJm2_5cdRHxyq43ZExw&ust=1706935836252000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDr8JLui4QDFQAAAAAdAAAAABAE");
     background-position: top;
     background-repeat: no-repeat;  */
-    background-color: salmon;
+    background-color: maroon;
 
 }
 header{
@@ -17,11 +17,16 @@ header{
     color: transparent;
     display: flex;
 }
-
+#Head{
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    
+}
 .logo{
     width: 60%;
     height: 15vh;
-    color: rgb(176, 143, 143);
+    color: rgb(152, 114, 24);
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -52,10 +57,10 @@ footer{
     color: white;
     position: fixed;
 }
-p{
+ p{
     display: flex;
     align-items: center;
-    margin-right: 45px;
+    margin-right: 20px;
     font-size: 0.9em;
 }
 #Menus{
@@ -85,9 +90,10 @@ p{
     align-items: center;
     justify-content: center;
     color: white;
-    background-image: url("https://static.vecteezy.com/system/resources/previews/027/057/177/non_2x/slices-of-roast-beef-on-a-white-plate-on-a-black-background-generative-ai-free-photo.jpg");
+    background-image: url("../img/oreada.jpeg");
+    /* background-image: url("https://static.vecteezy.com/system/resources/previews/027/057/177/non_2x/slices-of-roast-beef-on-a-white-plate-on-a-black-background-generative-ai-free-photo.jpg"); */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover ;
     /* background-size: 1500px; */
 
 }
@@ -158,13 +164,13 @@ p{
     justify-content: center;
 }
 h1{
-    color: blueviolet;
+    color: maroon;
     font-size: 2em;
     padding: 0;
 }
 p{
     font-size: 1em;
-    padding-left: 5vh;
+    padding-left: 3vh;
 }
 #sobrenosotros{
     width: 100vw;
@@ -209,8 +215,14 @@ p{
     height: 100vh;
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: white;
+    /* background-image: url("../img/images.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; */
     justify-content: center;
+}
+#galleta p{
+    color: black;
 }
 #historia h1{
     color: salmon;
@@ -221,8 +233,8 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: gray;
-    background-image: url("../img/platos.jpeg");
+    background-color: black;
+    /* background-image: url("); */
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -303,4 +315,35 @@ div img {
     color: black;
     display: flex;
     align-items: center;
+}
+#space-galleta{
+    background-image: url("../img/Mute.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.fondo-negro{
+    background-color: black;
+}
+#Cambio-de-menu,#Cambio-de-menu+label{
+    display: none;
+
+
+}
+@media (min-width:350px) and (max-width:850px){
+
+    .navegaddor{
+        display: none;
+    }
+    #Cambio-de-menu,#Cambio-de-menu+label{
+        display: block;
+    }
+    .left-about{
+        width: 100%;
+        height: 50%;
+    }
+    .rigth-about{
+        width: 100%;
+        height: 50%;
+    }
+
 }
