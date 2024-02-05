@@ -7,7 +7,7 @@ body{
     /* background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.m.wikipedia.org%2Fwiki%2FArchivo%3AArepas_con_chorizo.jpg&psig=AOvVaw04QIJm2_5cdRHxyq43ZExw&ust=1706935836252000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCIDr8JLui4QDFQAAAAAdAAAAABAE");
     background-position: top;
     background-repeat: no-repeat;  */
-    background-color: maroon;
+    /* background-color: maroon; */
 
 }
 header{
@@ -26,7 +26,7 @@ header{
 .logo{
     width: 60%;
     height: 15vh;
-    color: rgb(152, 114, 24);
+    color: rgb(76, 54, 3);
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -91,11 +91,11 @@ footer{
     align-items: center;
     justify-content: center;
     color: white;
-    background-image: url("../img/oreada.jpeg");
-    /* background-image: url("https://static.vecteezy.com/system/resources/previews/027/057/177/non_2x/slices-of-roast-beef-on-a-white-plate-on-a-black-background-generative-ai-free-photo.jpg"); */
+    /* background-image: url("../img/oreada.jpeg");
+    
     background-repeat: no-repeat;
     background-size: cover ;
-    /* background-size: 1500px; */
+    background-size: 1500px; */
 
 }
 
@@ -103,10 +103,23 @@ footer{
     width: 50vw;
     display: flex;
     flex-direction: column;
-    padding-right: 25vw;
+    padding-right: 2vw ;
+    padding-left: 2vw;
+    background-image: none;
+    color: transparent;
+}
+#rigth-home{
+    width: 200vw;
+    height: 110vh;
+    background-image: url("../img/oreada.jpeg");
+    /* background-image: url("https://static.vecteezy.com/system/resources/previews/027/057/177/non_2x/slices-of-roast-beef-on-a-white-plate-on-a-black-background-generative-ai-free-photo.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover ;
+    /* background-size: 1500px; */
 }
 #left-home p{
     margin: 0;
+    color: black;
 }
 #left-home h1{
     margin-top: 4vh;
@@ -204,6 +217,9 @@ p{
     background-size: cover;
 }  
 
+#historia .background-img-historia{
+    background-image: none;
+}
 
 .background-img-historia img {
     display: flex;
@@ -241,11 +257,12 @@ p{
 
 }
 button{
-    width: 20vw;
+    width: 14vw;
     height: 15vh;
-    background-color: #CA6F1E;
-    border: black;
-    color: white;
+    background-color: white;
+    border: white;
+    color: black;
+    font-size: 1.5em;
 }
 #services{
     width: 100vw;
@@ -293,7 +310,6 @@ button{
     justify-content: center;
     display: flex;
     align-items: center;
-    background-color: gray;
     /* background-image: url("../img/platos.jpeg");
     background-repeat: no-repeat;
     background-size: cover; */
@@ -302,13 +318,13 @@ button{
 #contact{
     width: 100vw;
     height: 100vh;
-    justify-content: center;
     display: flex;
+    float: left;
     align-items: center;
     background-color: black;
 }
 div img {
-    width: 35vw;
+    width: 25vw;
     height: 55vh;
     margin-right: 3vw;
 }
@@ -328,8 +344,31 @@ div img {
 #Cambio-de-menu,#Cambio-de-menu+label{
     display: none;
 
+}
+#left-contact{
+    width: 60vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
 
 }
+.contacto{
+    width: 22vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#rigth-contact{
+    width:40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;}
 
 @media (min-width:350px) and (max-width:850px){
     header{
@@ -382,10 +421,6 @@ div img {
         background-image: none;
     }
     
-    /* #navs{
-        height: 1vh;
-        width: 2vw;
-    } */
     #services{
         padding-left: 20px ;
         padding-right: 20px;
