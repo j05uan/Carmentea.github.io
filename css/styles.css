@@ -31,7 +31,7 @@ header{
     display: flex;
 }
 #Head{
-    height: 18vh;
+    height: 15vh;
     width: 100vw;
     display: flex;
     
@@ -85,6 +85,7 @@ footer{
     flex-direction: row-reverse;
 }
 .navegaddor{
+    text-decoration: none;
     padding: 0px;
     margin: 2px;
     width: 100%;
@@ -92,6 +93,7 @@ footer{
     display: flex;
     justify-content: space-evenly;
     height: 12vh;
+    color: black;
 }
 #contenedor{
     display: flex;
@@ -407,6 +409,9 @@ input[type="checkbox"]{
     header{
         display: flex;
         justify-content: center;
+    }
+    #Head{
+        height: 10vh;
     }
     .logo{
         width: 65%;
