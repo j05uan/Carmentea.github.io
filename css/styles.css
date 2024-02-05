@@ -1,3 +1,7 @@
+*{
+    margin: o;
+    padding: 0;
+}
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
@@ -10,6 +14,11 @@ body{
     /* background-color: maroon; */
 
 }
+
+ul{
+    list-style: none;
+}
+
 header{
     position: fixed;
     width: 100vw;
@@ -83,6 +92,7 @@ footer{
 #contenedor{
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 #home{
     width: 100vw;
@@ -237,6 +247,7 @@ p{
     background-repeat: no-repeat;
     background-size: cover; */
     justify-content: center;
+    
 }
 #galleta p{
     color: black;
@@ -385,7 +396,9 @@ div img {
     flex-direction: column;
     align-items: center;
     justify-content: center;}
-
+input[type="checkbox"]{
+    visibility: hidden;
+}
 @media (min-width:350px) and (max-width:850px){
     header{
         display: flex;
@@ -407,10 +420,27 @@ div img {
     }
     #Cambio-de-menu,#Cambio-de-menu+label{
         display: block;
+        color: white;
     }
+    #Cambio-de-menu+label{
+        margin-top: 4vh;
+    }
+    #Menus:has(input[type="checkbox"]:checked) .navegaddor{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 95%;
+    }
+    #Menus:has(input[type="checkbox"]:checked) {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-left: 4vw;
+    }
+
     #about{
         display: flex;
         flex-direction: column;
+        height: 197vh;
     }
     #sobrenosotros{
         display: flex;
@@ -420,12 +450,17 @@ div img {
         display: flex;
         flex-direction: column;
         background-image: none;
+        justify-content: space-evenly;
     }
     #Pet-friendly{
         display: flex;
         flex-direction: column;
         background-image: none;
     }
+    #Pet-friendly .rigth-about{
+        background-color: black;
+        width: 100vw;
+        height: 101vh;}
     #menu{
         display: flex;
         flex-direction: column;
@@ -459,6 +494,12 @@ div img {
         padding-top: 2px;
         width: 100vw;
         height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #sobrenosotros .left-about{
+        height: 100vh;
     }
     .rigth-about{
         padding-left: 20px ;
@@ -487,7 +528,7 @@ div img {
     }
     .im-rigth-about {
         display: flex;
-        width: 100vw;
+        width: 55vw;
         height: 65vh ;
         flex-wrap: wrap;
         align-content: center;
@@ -502,7 +543,7 @@ div img {
         height: 11vh;
         background-color: white;
         border: black;
-        color: white;}
+        color: black;}
     #galleta {
         width: 89vw;
         height: 60vh;
@@ -516,5 +557,49 @@ div img {
         margin-bottom: 0px;
         padding: none;
     }
-
+    #home{
+        background-image: url("../img/oreada.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover ;
+        background-size: 1500px;
+    }
+    #rigth-home{
+        display: none;
+        }
+    #galleta{
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        background-image: url("../img/images.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;}
+    #contact{
+        display: flex;
+        flex-direction: column;
+    }
+    #left-contact{
+        width: 100vw;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto{
+        width: 50vw;
+        height: 25vw;
+    }
+    #rigth-contact{
+        width: 100vw;
+        height: 50vh;
+    }
+    .rigth-about img {
+        display: flex;
+        width: 45vw;
+        height: 45vh;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
     }
