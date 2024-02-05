@@ -399,13 +399,14 @@ div img {
 input[type="checkbox"]{
     visibility: hidden;
 }
-@media (min-width:350px) and (max-width:850px){
+@media (max-width:850px){
     header{
         display: flex;
         justify-content: center;
     }
     .logo{
-        width: 85%;
+        width: 65%;
+        font-size: 0.7em;
     }
     footer {
         width: 25%;
