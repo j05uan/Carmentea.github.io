@@ -18,6 +18,10 @@ body{
 ul{
     list-style: none;
 }
+.logo a{
+    text-decoration: none;
+    color: maroon;
+}
 
 header{
     position: fixed;
@@ -35,7 +39,7 @@ header{
 .logo{
     width: 60%;
     height: 15vh;
-    color: rgb(76, 54, 3);
+    color: maroon;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
