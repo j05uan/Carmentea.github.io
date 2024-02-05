@@ -315,8 +315,10 @@ button{
     background-size: cover; */
 
 }
-#Pet-friendly.rigth-about{
+#Pet-friendly .rigth-about{
     background-color: black;
+    width: 56vw;
+    height: 101vh;
 }
 #contact{
     width: 100vw;
@@ -325,6 +327,17 @@ button{
     float: left;
     align-items: center;
     background-color: black;
+}
+.im-rigth-about{
+    /* background-image: url("../img/menu.jpeg");
+    background-repeat: no-repeat; */
+    background-size: cover; 
+    height: 100vh;
+}
+.im-rigth-about img{
+    height: 90vh;
+    width: 47vw;
+    margin-left: 3vw ;
 }
 div img {
     width: 25vw;
@@ -487,7 +500,7 @@ div img {
     button {
         width: 43vw;
         height: 11vh;
-        background-color: #CA6F1E;
+        background-color: white;
         border: black;
         color: white;}
     #galleta {
