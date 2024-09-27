@@ -46,11 +46,12 @@ header{
     /* flex-direction: row-reverse; */
     /* font-size: 2.5em; */
 }
-.logo h2{
+#Carmentea{
     font-size: 2.5em;
     margin-top: 8px;
     margin-bottom: 0px;
-
+    -webkit-text-stroke: 2px maroon;
+    color: maroon;
 }
 footer{
     width: 25%;
@@ -70,11 +71,11 @@ footer{
     color: white;
     position: fixed;
 }
- p{
+p{
     display: flex;
     align-items: center;
     margin-top: 3px;
-    margin-right: 22px;
+    margin-right: 20px;
     font-size: 0.9em;
 }
 
@@ -145,6 +146,10 @@ footer{
 #left-home h1{
     margin-top: 4vh;
     margin-bottom: 4vh;
+    font-size: 2.7rem;
+    -webkit-text-stroke: 1px maroon;
+    color: transparent;
+
 }
 #rigth-home{
     width: 50vw;
@@ -168,6 +173,9 @@ footer{
     align-items: center;
     padding-top: 45vh;
     padding-left: 5vw;
+}
+#space #galleta .left-about h1{
+    color: salmon;
 }
 .rigth-about{
     display: flex;
@@ -623,5 +631,5 @@ input[type="checkbox"]{
     color: salmon;
     position: relative;
     top:-45px;
-    left: 80px;
+    left: 170px;
 }
