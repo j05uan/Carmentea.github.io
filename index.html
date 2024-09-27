@@ -123,15 +123,22 @@
                             <li>  +57 3124013599</li>
                             <li>  +57 3052288509</li>
                             <li>  carmenteaadmin@gmail.com</li>
-                        </ul>
+                        </ul> 
                     </aside>
                     <aside id="rigth-contact">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15837.548147636686!2d-73.1262454!3d7.0810495!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683fee1ac02b39%3A0x7f49f525976f0184!2sLlanera%20Carmentea!5e0!3m2!1ses-419!2sco!4v1707149406949!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        
                     </aside>
             </section>
+            
+                    <p id="derechos">&copy; <span id="currentYear"></span> .  Carmentea.  Todos los derechos reservados.</p>
+                
+         
                
         </section>
     </section>
+    
+   
+    
 <script>
     const black = document.getElementsByClassName('NavA');
     const rutaHead = document.getElementById("Head");
@@ -146,11 +153,13 @@
             rutaHead.classList.remove('fondo-negro');
     
             for (let i = 0; i < black.length; i++) {
-                black[i].style.color = ''; // Restablece el color original
+                black[i].style.color = ''; 
             }
         }
     });
     
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
 </script>
 </body>
 </html>
