@@ -31,7 +31,7 @@ header{
     display: flex;
 }
 #Head{
-    height: 12vh;
+    height: 16vh;
     width: 100vw;
     display: flex;
     
@@ -63,7 +63,7 @@ footer{
 }
 #reservas   {
     
-    background-color: grey;
+    background-color: rgb(41, 39, 39);
     width: 200px;
     height: 50px;
     border-color: grey;
@@ -77,12 +77,17 @@ footer{
     margin-right: 22px;
     font-size: 0.9em;
 }
+
 #Menus{
     width: 40%;
     height: 15vh;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
+}
+#Menus ul a{
+    text-decoration: none;
+    color: black;
 }
 .navegaddor{
     text-decoration: none;

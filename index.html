@@ -17,11 +17,11 @@
         </section>
         <section id="Menus">
             <ul class="navegaddor">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a class="NavA" href="#home">Inicio</a></li>
+                <li><a class="NavA"  href="#about">Nosotros</a></li>
+                <li><a class="NavA"  href="#menu">Menu</a></li>
+                <li><a class="NavA"  href="#services">Servicios</a></li>
+                <li><a class="NavA"  href="#contact">Contacto</a></li>
             </ul>
             <input type="checkbox" id="Cambio-de-menu">
             <label for="Cambio-de-menu">☰</label>
@@ -133,14 +133,24 @@
         </section>
     </section>
 <script>
-    const rutaHead=document.getElementById("Head")
-    window.addEventListener("scroll", function(){
-        if (window.scrollY > 0){ 
-            rutaHead.classList.add('fondo-negro')
+    const black = document.getElementsByClassName('NavA');
+    const rutaHead = document.getElementById("Head");
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 0) { 
+            rutaHead.classList.add('fondo-negro');
+    
+            for (let i = 0; i < black.length; i++) {
+                black[i].style.color = 'white';
+            }
+        } else {
+            rutaHead.classList.remove('fondo-negro');
+    
+            for (let i = 0; i < black.length; i++) {
+                black[i].style.color = ''; // Restablece el color original
+            }
         }
-        else{rutaHead.classList.remove('fondo-negro')}
-
-    })
+    });
+    
 </script>
 </body>
 </html>
